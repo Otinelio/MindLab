@@ -1,0 +1,51 @@
+/* boutton */
+.btn {
+    font-size: var(--fs-s) !important;
+    font-weight: var(--fw-medium) !important;
+    color: var(--color-white) !important;
+    background-color: var(--color-primary);
+    position: relative;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-primary);
+    transform: scale(1.05);
+    border: 1px solid var(--color-primary) !important;
+  }
+  .btn-h {
+    font-size: var(--fs-s) !important;
+    font-weight: var(--fw-medium) !important;
+    color: var(--color-primary) !important;
+    border: 1px solid var(--color-primary) !important;
+    position: relative;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  
+  .btn-h:hover {
+    color: var(--color-black) !important;
+    transition: all 0.3s ease;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary) !important;
+  }
+  
+  /* titre set avant titre */
+  
+  .titre {
+    font-size: var(--fs-xl) !important;
+    font-weight: var(--fw-bold) !important;
+    color: var(--color-white) !important;
+    font-family: var(--ff-secondary) !important;
+    @media (min-width: 768px) {
+      font-size: var(--fs-xxl) !important;
+    }
+  }
+  
+  .avant-titre {
+    font-size: var(--fs-base) !important;
+    font-weight: var(--fw-normal) !important;
+    color: var(--color-white) !important;
+  }

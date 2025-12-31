@@ -1,0 +1,23 @@
+
+section#section7 {
+    background-color: rgb(44, 44, 245);
+    padding: 200px 0px 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+section#section8 .ligne {
+    height: 2%;
+    width: 10%;
+    background-color: #3b59c4;
+    display: inline-block;
+}
+
+section#section8 span {
+    color: rgb(171, 179, 177);
+}

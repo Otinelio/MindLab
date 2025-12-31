@@ -1,0 +1,7 @@
+section#section9 .col-12:hover a.bi:hover {
+    color: rgb(105, 105, 247) !important;
+}
+
+section#section9 .col-12:hover a.bi {
+    color: blue !important;
+}

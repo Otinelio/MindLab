@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatisation MindLab - Chatbots & Automatisation Réseaux Sociaux</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/composants.css">
+    <link rel="stylesheet" href="assets/css/apropos.css">
+    <link rel="stylesheet" href="assets/css/cours.css">
+    <link rel="stylesheet" href="assets/css/formateur.css">
+    <link rel="stylesheet" href="assets/css/evenement.css">
+  </head>
+<body>
+
+  <header id="header">  
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fw-bold fs-2 mentor text-primary" href="#" >MindLab</a>
+          
+          <!-- Menu burger personnalisé pour mobile/tablette -->
+          <button class="custom-burger d-lg-none" type="button" id="customBurger" aria-label="Toggle navigation">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+          
+          <!-- Menu desktop (visible à partir de lg) -->
+          <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNavDropdown">
+            <ul class="navbar-nav text-center mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="cours.html">A propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="formateur.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="evenement.html">Cours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+          </ul>
+          <div class="nav-item text-end ms-auto">
+            <a class="btn rounded-5 px-4" href="#">Commencer</a>
+          </div>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Menu mobile/tablette (affiché à gauche) -->
+      <div class="mobile-menu-overlay" id="menuOverlay"></div>
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link active text-primary" href="index.html">Accueil</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="cours.html">A propos</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="formateur.html">Services</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="evenement.html">Cours</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#">Contact</a>
+            </li>
+            <li class="mobile-nav-item mt-4">
+              <a class="btn rounded-5 px-4 w-100 text-center d-block" href="#">Commencer</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="banner">
+        <div class="banner-img">
+          <div class="banner-overlay">
+            <div class="banner-body container pt-5">
+              <h1 class="titre">
+                Automatisez vos réseaux sociaux<br>
+                et <span style="color: var(--color-primary);">générez des ventes avec l'IA</span></h1>
+                <p class="avant-titre">Formations professionnelles et services d'automatisation pour Instagram, TikTok et campagnes publicitaires. Apprenez à créer et déployer des chatbots intelligents qui travaillent 24/7 pour votre business.</p>
+                <a class="commencer btn-h text-light btn-outline-primary rounded-5 px-5 py-3" style="font-size: var(--fs-sm) !important;">Commencer</a>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="container section1">
+        <div class="row my-5 g-3">
+          <!-- Image en haut sur mobile/tablette, à droite sur desktop -->
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <div class="section1-image-wrapper">
+              <img src="assets/img/ai-generated-9342713_1280.jpg" class="section1-image w-100 rounded-5" alt="Formation automatisation">
+            </div>
+          </div>
+          <!-- Texte en bas sur mobile/tablette, à gauche sur desktop -->
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <h3 class="my-3">Formation complète et accompagnement jusqu'à votre première vente</h3>
+            <p style="font-style: italic;">Automatisation MindLab vous forme aux techniques avancées d'automatisation sur les réseaux sociaux avec des formations pratiques et un suivi personnalisé.</p>
+              <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                  </svg><span class="fw-bold">Formations sur chariow :</span> Création, déclenchement et gestion de bots automatisés pour Instagram et TikTok.</p>
+              <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                  </svg><span class="fw-bold">Intégration avancée de chatbots</span>Intégration avancée de chatbots avec sélection intelligente de posts, filtres personnalisés et scénarios automatisés.</span></p>
+              <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                  </svg><span class="fw-bold">Accompagnement personnalisé et suivi</span> jusqu'à votre première vente, avec assistance WhatsApp incluse pour toutes vos questions.</span></p>
+            
+                  
+              <a href="" class="btn  rounded-5 px-4 py-2 my-3">
+              Lire plus
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="container-fluid section2">
+          <div class="container text-center">
+            <div class="row g-3 g-md-4">
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="section2-item">
+                  <span class="box">180+</span>
+                  <p class="section2-label">Étudiants formés</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="section2-item">
+                  <span class="box">250+</span>
+                  <p class="section2-label">Chatbots déployés</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="section2-item">
+                  <span class="box">95%</span>
+                  <p class="section2-label">Taux de satisfaction</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="section2-item">
+                  <span class="box">24/7</span>
+                  <p class="section2-label">Support WhatsApp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+      <section id="section3" class="section3-wrapper">
+        <div class="container py-5">
+          <div class="row g-4">
+            <!-- Carte principale à gauche (comme dans l'image) -->
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0 d-flex">
+              <div class="section3-main-card w-100">
+                <h2 class="section3-main-title">Pourquoi choisir MindLab ?</h2>
+                <p class="section3-main-text">Nous sommes les experts de l'automatisation sur Instagram et TikTok. 
+                  Nos formations pratiques sur xhariow vous donnent toutes les clés : création de bots, campagnes IA, sélection de posts automatisée. 
+                  Nous vous accompagnons personnellement jusqu'à votre première vente avec un support WhatsApp disponible 24/7.
+                </p>
+                <a href="#" class="btn rounded-5 py-2" style="background-color: var(--color-white) !important; color: var(--color-primary) !important;">
+                  Découvrir nos formations
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- 3 Cartes de services à droite (comme dans l'image) -->
+            <div class="col-12 col-lg-8">
+              <div class="row g-4 h-100">
+                <div class="col-12 col-md-6 col-xl-4 d-flex">
+                  <div class="section3-service-card w-100">
+                    <div class="section3-icon-wrapper">
+                      <i class="bi bi-clipboard-data section3-icon"></i>
+                    </div>
+                    <h4 class="section3-service-title">Chatbots Instagram & TikTok</h4>
+                    <p class="section3-service-text">Intégration avancée de chatbots intelligents qui interagissent automatiquement avec votre audience et génèrent des leads qualifiés</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 d-flex">
+                  <div class="section3-service-card w-100">
+                    <div class="section3-icon-wrapper">
+                      <i class="bi bi-gem section3-icon"></i>
+                    </div>
+                    <h4 class="section3-service-title">Campagnes IA Boost</h4>
+                    <p class="section3-service-text">Optimisation de vos campagnes publicitaires avec l'intelligence artificielle pour maximiser vos conversions et votre ROI</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 d-flex">
+                  <div class="section3-service-card w-100">
+                    <div class="section3-icon-wrapper">
+                      <i class="bi bi-inboxes section3-icon"></i>
+                    </div>
+                    <h4 class="section3-service-title">Accompagnement jusqu'à la vente</h4>
+                    <p class="section3-service-text">Suivi personnalisé de chaque étudiant jusqu'à la première vente, avec assistance WhatsApp et formation pratique continue</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section4" class="section4-wrapper">
+        <div class="container py-5">
+          <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-instagram section4-icon" style="color: rgb(255, 230, 0);"></i>
+                <span class="section4-label">Chatbot Instagram</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-music-note-beamed section4-icon" style="color: #5578ff;"></i>
+                <span class="section4-label">Chatbot TikTok</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-lightning-charge section4-icon" style="color: #e80368;"></i>
+                <span class="section4-label">Sélection Auto Posts</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-funnel section4-icon" style="color: #e361ff;"></i>
+                <span class="section4-label">Filtres Intelligents</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-play-circle section4-icon" style="color: #47aeff;"></i>
+                <span class="section4-label">Scénarios Auto</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-chat-quote section4-icon" style="color: #ffa76e;"></i>
+                <span class="section4-label">Questions Auto</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-graph-up-arrow section4-icon" style="color: #11dbcf;"></i>
+                <span class="section4-label">Campagnes IA Boost</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-check2-circle section4-icon" style="color: #4233ff;"></i>
+                <span class="section4-label">Test Systèmes</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-robot section4-icon" style="color: #b2904f;"></i>
+                <span class="section4-label">Création Bots</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-power section4-icon" style="color: #b20969;"></i>
+                <span class="section4-label">Déclenchement Bots</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-person-check section4-icon" style="color: #ff5828;"></i>
+                <span class="section4-label">Accompagnement Perso</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="section4-card">
+                <i class="bi bi-whatsapp section4-icon" style="color: #29cc61;"></i>
+                <span class="section4-label">Support WhatsApp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section5" class="section5-wrapper">
+        <div class="container py-5">
+          <div class="section5-header mb-4 pb-5">
+            <span class="section5-label">FORMATIONS</span>
+            <div class="section5-line"></div>
+            <h2 class="section5-title">NOS FORMATIONS POPULAIRES</h2>
+          </div>
+          
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <a href="">
+                <div class="section5-card">
+                  <div class="section5-image-wrapper">
+                    <img src="assets/img/technology-3389885_1920.jpg" class="section5-image" alt="Formation Fondamentaux">
+                  </div>
+                  <div class="section5-card-body">
+                    <div class="section5-badge-price">
+                      <span class="section5-badge">Fondamentaux</span>
+                      <span class="section5-price">497 €</span>
+                    </div>
+                    <h5 class="section5-card-title">Formation chariow : Les Bases de l'Automatisation</h5>
+                    <p class="section5-card-text">Découvrez les fondamentaux de l'automatisation sur Instagram et TikTok. Apprenez la création et le déclenchement de bots, la sélection de posts, les filtres et les scénarios automatisés.</p>
+                    
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+              <a href="">
+                <div class="section5-card">
+                  <div class="section5-image-wrapper">
+                    <img src="assets/img/robot-8781973_1920.jpg" class="section5-image" alt="Formation Avancée">
+                  </div>
+                  <div class="section5-card-body">
+                    <div class="section5-badge-price">
+                      <span class="section5-badge">Avancé</span>
+                      <span class="section5-price">797 €</span>
+                    </div>
+                    <h5 class="section5-card-title">Intégration Avancée : Chatbots Instagram & TikTok</h5>
+                    <p class="section5-card-text">Formation approfondie sur l'intégration avancée de chatbots. Maîtrisez les questions automatiques, les tests de systèmes, l'exécution de scénarios complexes et l'optimisation de performances.</p>
+                    
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+              <a href="">
+                <div class="section5-card">
+                  <div class="section5-image-wrapper">
+                    <img src="assets/img/ai-generated-9342713_1280.jpg" class="section5-image" alt="Formation Expert">
+                  </div>
+                  <div class="section5-card-body">
+                    <div class="section5-badge-price">
+                      <span class="section5-badge">Expert</span>
+                      <span class="section5-price">997 €</span>
+                    </div>
+                    <h5 class="section5-card-title">Campagnes IA & Automatisation Complète</h5>
+                    <p class="section5-card-text">Formation expert sur les campagnes publicitaires boostées à l'IA. Apprenez à créer des systèmes automatisés complets, tester et optimiser pour générer des ventes automatiquement.</p>
+  
+                    
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  </main>
+
+  <footer class="footer-wrapper">
+    <div class="container py-5">
+      <div class="row g-4">
+        <!-- Colonne 1: MindLab -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <h4 class="footer-brand">MindLab</h4>
+          <div class="footer-contact">
+            <p class="footer-phone">Téléphone: +33 6 59 59 59 59</p>
+            <p class="footer-email">Email: contact@mindlab.fr</p>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="footer-social-icon" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Colonne 2: Liens utiles -->
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="footer-heading">Liens utiles</h5>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Maison</a></li>
+            <li><a href="#" class="footer-link">À propos de nous</a></li>
+            <li><a href="#" class="footer-link">Services</a></li>
+            <li><a href="#" class="footer-link">Conditions d'utilisation</a></li>
+            <li><a href="#" class="footer-link">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+        
+        <!-- Colonne 3: Nos services -->
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="footer-heading">Nos services</h5>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Chatbots Instagram</a></li>
+            <li><a href="#" class="footer-link">Chatbots TikTok</a></li>
+            <li><a href="#" class="footer-link">Campagnes IA Boost</a></li>
+            <li><a href="#" class="footer-link">Accompagnement Perso</a></li>
+            <li><a href="#" class="footer-link">Support WhatsApp</a></li>
+          </ul>
+        </div>
+        
+        <!-- Colonne 4: Newsletter -->
+        <div class="col-lg-5 col-md-6 col-12">
+          <h5 class="footer-heading">Notre newsletter</h5>
+          <p class="footer-newsletter-text">Abonnez-vous à notre newsletter et recevez les dernières nouvelles sur nos produits et services !</p>
+          <form class="footer-newsletter-form">
+            <div class="footer-newsletter-input-wrapper">
+              <input type="email" class="footer-newsletter-input" id="footerEmail" placeholder="Votre email" aria-label="Adresse email">
+              <button type="submit" class="footer-newsletter-btn">S'abonner</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#header" id="fleche" class="flechebas d-flex align-items-center justify-content-center active rounded-pill">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+</html>
+
+

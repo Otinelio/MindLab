@@ -429,7 +429,7 @@ ol li {
 /* Cartes de services à droite (fond blanc) */
 .section3-service-card {
     background-color: var(--color-white);
-    border: 1px solid rgba(var(--color-primary-rgb), 0.1);
+    border: 1px solid var(--color-primary);
     border-radius: 12px;
     padding: 2rem 1.5rem;
     height: 100%;
@@ -1393,6 +1393,6 @@ section#section6 a:hover {
 }
 
 /* Utilitaires généraux */
-.text-primary {
+header .nav-link.active {
     color: var(--color-primary) !important;
 }

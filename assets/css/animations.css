@@ -1,0 +1,131 @@
+/* Animations au scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Animation fadeIn */
+.animate-fade-in {
+    opacity: 0;
+}
+
+.animate-fade-in.animated {
+    opacity: 1;
+}
+
+/* Animation slideUp */
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.animate-slide-up.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation slideDown */
+.animate-slide-down {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.animate-slide-down.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation slideLeft */
+.animate-slide-left {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.animate-slide-left.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animation slideRight */
+.animate-slide-right {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.animate-slide-right.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animation zoomIn */
+.animate-zoom-in {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.animate-zoom-in.animated {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Animation zoomOut */
+.animate-zoom-out {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.animate-zoom-out.animated {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Délai d'animation */
+.animate-delay-100 {
+    transition-delay: 0.1s;
+}
+
+.animate-delay-200 {
+    transition-delay: 0.2s;
+}
+
+.animate-delay-300 {
+    transition-delay: 0.3s;
+}
+
+.animate-delay-400 {
+    transition-delay: 0.4s;
+}
+
+.animate-delay-500 {
+    transition-delay: 0.5s;
+}
+
+/* Durée d'animation */
+.animate-duration-fast {
+    transition-duration: 0.4s;
+}
+
+.animate-duration-normal {
+    transition-duration: 0.6s;
+}
+
+.animate-duration-slow {
+    transition-duration: 0.8s;
+}
+
+/* Désactiver les animations pour les utilisateurs qui préfèrent les réduire */
+@media (prefers-reduced-motion: reduce) {
+    .animate-on-scroll,
+    .animate-fade-in,
+    .animate-slide-up,
+    .animate-slide-down,
+    .animate-slide-left,
+    .animate-slide-right,
+    .animate-zoom-in,
+    .animate-zoom-out {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
+

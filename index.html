@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="assets/css/cours.css">
   <link rel="stylesheet" href="assets/css/formateur.css">
   <link rel="stylesheet" href="assets/css/evenement.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
   <header id="header">
     <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-2 mentor text-primary" href="#">MindLab</a>
+        <a class="navbar-brand fw-bold fs-2 mentor" href="#">MindLab</a>
 
         <!-- Menu burger personnalisé pour mobile/tablette -->
         <button class="custom-burger d-lg-none" type="button" id="customBurger" aria-label="Toggle navigation">
@@ -47,17 +48,17 @@
               <a class="nav-link" aria-current="page" href="pages/apropos.html">A propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="formateur.html">Services</a>
+              <a class="nav-link" aria-current="page" href="pages/cours.html">Cours</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="evenement.html">Cours</a>
+              <a class="nav-link" aria-current="page" href="pages/services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Contact</a>
+              <a class="nav-link" aria-current="page" href="pages/contact.html">Contact</a>
             </li>
           </ul>
           <div class="nav-item text-end ms-auto">
-            <a class="btn rounded-5 px-4" href="#">Commencer</a>
+            <a class="btn rounded-5 px-4" href="pages/contact.html">Commencer</a>
           </div>
         </div>
       </div>
@@ -69,22 +70,23 @@
       <div class="mobile-menu-content">
         <ul class="mobile-nav-list">
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link active text-primary" href="index.html">Accueil</a>
+            <a class="mobile-nav-link active" href="index.html">Accueil</a>
           </li>
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="cours.html">A propos</a>
+            <a class="mobile-nav-link" href="pages/apropos.html">A propos</a>
           </li>
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="formateur.html">Services</a>
+            <a class="mobile-nav-link" href="pages/cours.html">Cours</a>
           </li>
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="evenement.html">Cours</a>
+            <a class="mobile-nav-link" href="pages/services.html">Services</a>
           </li>
+          
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="#">Contact</a>
+            <a class="mobile-nav-link" href="pages/contact.html">Contact</a>
           </li>
           <li class="mobile-nav-item mt-4">
-            <a class="btn rounded-5 px-4 w-100 text-center d-block" href="#">Commencer</a>
+            <a class="btn rounded-5 px-4 py-3 w-100 text-center d-block" href="pages/contact.html" style="font-size: var(--fs-base) !important;">Commencer</a>
           </li>
         </ul>
       </div>
@@ -112,47 +114,49 @@
 
   <main>
 
+
     <section class="container section1">
-      <div class="row my-5 g-3">
+      <div class="row my-lg-5 my-2 mb-5 g-3">
         <!-- Image en haut sur mobile/tablette, à droite sur desktop -->
-        <div class="col-12 col-lg-6 order-1 order-lg-2">
+        <div class="col-12 col-lg-6 order-2">
           <div class="section1-image-wrapper">
             <img src="assets/img/ai-generated-9342713_1280.jpg" class="section1-image w-100 rounded-5"
               alt="Formation automatisation">
           </div>
         </div>
         <!-- Texte en bas sur mobile/tablette, à gauche sur desktop -->
-        <div class="col-12 col-lg-6 order-2 order-lg-1">
-          <h3 class="my-3">Formation complète et accompagnement jusqu'à votre première vente</h3>
-          <p style="font-style: italic;">Automatisation MindLab vous forme aux techniques avancées d'automatisation sur
-            les réseaux sociaux avec des formations pratiques et un suivi personnalisé.</p>
+        <div class="col-12 col-lg-6 order-1">
+          <h3 class="my-3">Nous aidons les entreprises à automatiser intelligemment</h3>
+          <p style="font-style: italic;">Grâce à des solutions modernes et sur mesure, nous simplifions les processus, réduisons les erreurs et améliorons la productivité au quotidien.</p>
           <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
               fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
               <path
                 d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
-            </svg><span class="fw-bold">Formations sur chariow :</span> Création, déclenchement et gestion de bots
-            automatisés pour Instagram et TikTok.</p>
+            </svg>Automatisation des tâches répétitives et chronophages</p>
           <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
               fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
               <path
                 d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
-            </svg><span class="fw-bold">Intégration avancée de chatbots</span>Intégration avancée de chatbots avec
-            sélection intelligente de posts, filtres personnalisés et scénarios automatisés.</span></p>
+            </svg>Intégration d’outils digitaux adaptés à chaque besoin</p>
           <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
               fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
               <path
                 d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
-            </svg><span class="fw-bold">Accompagnement personnalisé et suivi</span> jusqu'à votre première vente, avec
-            assistance WhatsApp incluse pour toutes vos questions.</span></p>
+            </svg>Optimisation des processus internes et de la relation client</p>
+          <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+              <path
+                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+            </svg>Solutions évolutives pensées pour la croissance des entreprises</p>
 
-
-          <a href="" class="btn  rounded-5 px-4 py-2 my-3">
-            Lire plus
-            <i class="bi bi-arrow-right"></i>
-          </a>
+            <a href="" class="btn  rounded-5 px-4 py-2 my-3">
+              Lire plus
+              <i class="bi bi-arrow-right"></i>
+            </a>
         </div>
       </div>
     </section>
@@ -339,7 +343,7 @@
 
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-4">
-            <a href="">
+            <a href="pages/details_cours.html?formation=1">
               <div class="section5-card">
                 <div class="section5-image-wrapper">
                   <img src="assets/img/technology-3389885_1920.jpg" class="section5-image" alt="Formation Fondamentaux">
@@ -347,7 +351,7 @@
                 <div class="section5-card-body">
                   <div class="section5-badge-price">
                     <span class="section5-badge">Fondamentaux</span>
-                    <span class="section5-price">497 €</span>
+                    <span class="section5-price">7999 FCFA</span>
                   </div>
                   <h5 class="section5-card-title">Formation chariow : Les Bases de l'Automatisation</h5>
                   <p class="section5-card-text">Découvrez les fondamentaux de l'automatisation sur Instagram et TikTok.
@@ -360,7 +364,7 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <a href="">
+            <a href="pages/details_cours.html?formation=2">
               <div class="section5-card">
                 <div class="section5-image-wrapper">
                   <img src="assets/img/robot-8781973_1920.jpg" class="section5-image" alt="Formation Avancée">
@@ -368,7 +372,7 @@
                 <div class="section5-card-body">
                   <div class="section5-badge-price">
                     <span class="section5-badge">Avancé</span>
-                    <span class="section5-price">797 €</span>
+                    <span class="section5-price">9999 FCFA</span>
                   </div>
                   <h5 class="section5-card-title">Intégration Avancée : Chatbots Instagram & TikTok</h5>
                   <p class="section5-card-text">Formation approfondie sur l'intégration avancée de chatbots. Maîtrisez
@@ -381,7 +385,7 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <a href="">
+            <a href="pages/details_cours.html?formation=3">
               <div class="section5-card">
                 <div class="section5-image-wrapper">
                   <img src="assets/img/ai-generated-9342713_1280.jpg" class="section5-image" alt="Formation Expert">
@@ -389,7 +393,7 @@
                 <div class="section5-card-body">
                   <div class="section5-badge-price">
                     <span class="section5-badge">Expert</span>
-                    <span class="section5-price">997 €</span>
+                    <span class="section5-price">14999 FCFA</span>
                   </div>
                   <h5 class="section5-card-title">Campagnes IA & Automatisation Complète</h5>
                   <p class="section5-card-text">Formation expert sur les campagnes publicitaires boostées à l'IA.
@@ -414,8 +418,8 @@
         <div class="col-lg-3 col-md-6 col-12">
           <h4 class="footer-brand">MindLab</h4>
           <div class="footer-contact">
-            <p class="footer-phone">Téléphone: +33 6 59 59 59 59</p>
-            <p class="footer-email">Email: contact@mindlab.fr</p>
+            <p class="footer-phone">Téléphone: +2290148521609</p>
+            <p class="footer-email">Email: automatemindlab@gmail.com</p>
           </div>
           <div class="footer-social">
             <a href="#" class="footer-social-icon" aria-label="Twitter">
@@ -437,11 +441,10 @@
         <div class="col-lg-2 col-md-6 col-12">
           <h5 class="footer-heading">Liens utiles</h5>
           <ul class="footer-links">
-            <li><a href="#" class="footer-link">Maison</a></li>
-            <li><a href="#" class="footer-link">À propos de nous</a></li>
-            <li><a href="#" class="footer-link">Services</a></li>
-            <li><a href="#" class="footer-link">Conditions d'utilisation</a></li>
-            <li><a href="#" class="footer-link">Politique de confidentialité</a></li>
+            <li><a href="index.html" class="footer-link">Accueil</a></li>
+            <li><a href="pages/apropos.html" class="footer-link">À propos de nous</a></li>
+            <li><a href="pages/services.html" class="footer-link">Services</a></li>
+            <li><a href="pages/cours.html" class="footer-link">Cours</a></li>
           </ul>
         </div>
 
@@ -449,11 +452,11 @@
         <div class="col-lg-2 col-md-6 col-12">
           <h5 class="footer-heading">Nos services</h5>
           <ul class="footer-links">
-            <li><a href="#" class="footer-link">Chatbots Instagram</a></li>
-            <li><a href="#" class="footer-link">Chatbots TikTok</a></li>
-            <li><a href="#" class="footer-link">Campagnes IA Boost</a></li>
-            <li><a href="#" class="footer-link">Accompagnement Perso</a></li>
-            <li><a href="#" class="footer-link">Support WhatsApp</a></li>
+            <li><a href="pages/services.html" class="footer-link">Chatbots Instagram</a></li>
+            <li><a href="pages/services.html" class="footer-link">Chatbots TikTok</a></li>
+            <li><a href="pages/services.html" class="footer-link">Campagnes IA Boost</a></li>
+            <li><a href="pages/services.html" class="footer-link">Accompagnement Perso</a></li>
+            <li><a href="pages/services.html" class="footer-link">Support WhatsApp</a></li>
           </ul>
         </div>
 
@@ -482,6 +485,7 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/scroll-animations.js"></script>
 </body>
 
 </html>

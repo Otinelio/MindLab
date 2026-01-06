@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="../assets/css/cours.css">
   <link rel="stylesheet" href="../assets/css/formateur.css">
   <link rel="stylesheet" href="../assets/css/evenement.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
   <link rel="stylesheet" href="../assets/css/animations.css">
 </head>
 
@@ -47,13 +48,13 @@
               <a class="nav-link" aria-current="page" href="apropos.html">A propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="cours.html">Cours</a>
+              <a class="nav-link" aria-current="page" href="cours.html">Cours</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
             </li>
           </ul>
           <div class="nav-item text-end ms-auto">
@@ -75,13 +76,13 @@
             <a class="mobile-nav-link" href="apropos.html">A propos</a>
           </li>
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link active" href="cours.html">Cours</a>
+            <a class="mobile-nav-link" href="cours.html">Cours</a>
           </li>
           <li class="mobile-nav-item">
             <a class="mobile-nav-link" href="services.html">Services</a>
           </li>
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="contact.html">Contact</a>
+            <a class="mobile-nav-link active" href="contact.html">Contact</a>
           </li>
           <li class="mobile-nav-item mt-4">
             <a class="btn rounded-5 px-4  py-3 text-center d-block" href="contact.html">Commencer</a>
@@ -94,8 +95,8 @@
 
   <section id="section7">
     <div class="col-12 col-xl-6 col-md-10 col-sm-8 text-center mb-5 px-2">
-      <h3>Nos formations en automatisation</h3>
-      <p>Trois étapes progressives pour apprendre, appliquer et réussir avec Chariow.
+      <h3>Contactez-nous</h3>
+      <p>Une question ? Un projet ? N'hésitez pas à nous contacter, nous serons ravis de vous aider.
       </p>
     </div>
 
@@ -105,119 +106,160 @@
         <ol class="breadcrumb " style="color: white !important;">
           <li class="breadcrumb-item"><a href="../index.html" class=""
               style="text-decoration: none; color: var(--color-text);">Accueil</a></li>
-          <li class="breadcrumb-item active text-light" aria-current="page" class="text-light">Cours</li>
+          <li class="breadcrumb-item active text-light" aria-current="page" class="text-light">Contact</li>
         </ol>
       </div>
     </nav>
   </section>
 
-  <section id="section5" class="section5-wrapper">
-    <div class="container py-5">
-      <div class="section5-header mb-4 pb-5">
-        <span class="section5-label">FORMATIONS</span>
-        <div class="section5-line"></div>
-        <h2 class="section5-title">NOS FORMATIONS POPULAIRES</h2>
+  <section class="contact-wrapper">
+    <div class="container">
+      <!-- En-tête -->
+      <div class="contact-header">
+        <span class="contact-header-label">CONTACT</span>
+        <h2 class="contact-header-title">Parlons de votre projet</h2>
+        <p class="contact-header-text">
+          Remplissez le formulaire ci-dessous ou contactez-nous directement. Notre équipe vous répondra dans les plus
+          brefs délais.
+        </p>
       </div>
 
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-          <a href="details_cours.html?formation=1">
-            <div class="section5-card">
-              <div class="section5-image-wrapper">
-                <img src="../assets/img/technology-3389885_1920.jpg" class="section5-image"
-                  alt="Formation Fondamentaux">
-              </div>
-              <div class="section5-card-body">
-                <div class="section5-badge-price">
-                  <span class="section5-badge">Fondamentaux</span>
-                  <span class="section5-price">7999 FCFA</span>
-                </div>
-                <h5 class="section5-card-title">Formation 1.0 — Les bases</h5>
-                <p class="section5-card-text">
-                  La formation la plus complète pour maîtriser des systèmes avancés et développer une activité
-                  professionnelle en automatisation.
-                <ul style="color: var(--color-dark);">
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Principes de
-                      l’automatisation</span></li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Premiers workflows
-                      simples</span></li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Compréhension des
-                      outils </span></li>
-                </ul>
-                </p>
-                <p class="section5-card-text"><strong style="color: var(--color-primary);">Idéal pour :</strong>
-                  débutants</p>
-
-              </div>
+      <!-- Contenu principal -->
+      <div class="contact-content">
+        <!-- Formulaire de contact -->
+        <div class="contact-form-wrapper">
+          <h3 class="contact-form-title">
+            <i class="bi bi-envelope-paper"></i>
+            Envoyez-nous un message
+          </h3>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Nom complet *</label>
+              <input type="text" id="contactName" name="name" class="form-input" required
+                placeholder="Votre nom complet">
             </div>
-          </a>
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Email *</label>
+              <input type="email" id="contactEmail" name="email" class="form-input" required
+                placeholder="votre@email.com">
+            </div>
+            <div class="form-group">
+              <label for="contactPhone" class="form-label">Téléphone</label>
+              <input type="tel" id="contactPhone" name="phone" class="form-input" placeholder="+2290148521609">
+            </div>
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Sujet *</label>
+              <input type="text" id="contactSubject" name="subject" class="form-input" required
+                placeholder="Objet de votre message">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message *</label>
+              <textarea id="contactMessage" name="message" class="form-textarea" required
+                placeholder="Décrivez votre projet ou votre question..."></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn">
+              <i class="bi bi-send me-2"></i>
+              Envoyer le message
+            </button>
+          </form>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <a href="details_cours.html?formation=2">
-            <div class="section5-card">
-              <div class="section5-image-wrapper">
-                <img src="../assets/img/robot-8781973_1920.jpg" class="section5-image" alt="Formation Avancée">
+        <!-- Informations de contact -->
+        <div class="contact-info-wrapper">
+          <!-- Informations de contact -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">
+              <i class="bi bi-info-circle"></i>
+              Informations de contact
+            </h3>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-telephone"></i>
               </div>
-              <div class="section5-card-body">
-                <div class="section5-badge-price">
-                  <span class="section5-badge">Avancé</span>
-                  <span class="section5-price">9999 FCFA</span>
-                </div>
-                <h5 class="section5-card-title">InFormation 2.0 — Mise en pratique</h5>
-                <p class="section5-card-text">
-                  La formation la plus complète pour maîtriser des systèmes avancés et développer une activité
-                  professionnelle en automatisation.
-                <ul style="color: var(--color-dark);">
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Automatisations
-                      applicables au business</span></li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Structuration des
-                      premières offres</span></li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Cas pratiques
-                      réels</span></li>
-                </ul>
-                </p>
-                <p class="section5-card-text"><strong style="color: var(--color-primary);">Idéal pour :</strong> passer
-                  à l’action</p>
-
+              <div class="contact-info-content">
+                <div class="contact-info-label">Téléphone</div>
+                <a href="tel:+2290148521609" class="contact-info-value">+2290148521609</a>
               </div>
             </div>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <a href="details_cours.html?formation=3">
-            <div class="section5-card">
-              <div class="section5-image-wrapper">
-                <img src="../assets/img/ai-generated-9342713_1280.jpg" class="section5-image" alt="Formation Expert">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-envelope"></i>
               </div>
-              <div class="section5-card-body">
-                <div class="section5-badge-price">
-                  <span class="section5-badge">Expert</span>
-                  <span class="section5-price">14999 FCFA</span>
-                </div>
-                <h5 class="section5-card-title">Formation 3.0 — Niveau expert</h5>
-                <p class="section5-card-text">
-                  La formation la plus complète pour maîtriser des systèmes avancés et développer une activité
-                  professionnelle en automatisation.
-                <ul style="color: var(--color-dark);">
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Systèmes complexes et
-                      avancés</span></li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Automatisation à
-                      grande échelle</li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Approche
-                      professionnelle et scalable</li>
-                </ul>
-                </p>
-                <p class="section5-card-text"><strong style="color: var(--color-primary);">Idéal pour :</strong> profils
-                  avancés et entrepreneurs</p>
+              <div class="contact-info-content">
+                <div class="contact-info-label">Email</div>
+                <a href="mailto:automatemindlab@gmail.com" class="contact-info-value">automatemindlab@gmail.com</a>
               </div>
             </div>
-          </a>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+              <div class="contact-info-content">
+                <div class="contact-info-label">Support WhatsApp</div>
+                <a href="https://wa.me/33659595959" class="contact-info-value" target="_blank">Disponible 24/7</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Réseaux sociaux -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">
+              <i class="bi bi-share"></i>
+              Suivez-nous
+            </h3>
+            <p style="font-size: var(--fs-sm); color: var(--color-text-secondary); margin-bottom: 1rem;">
+              Restez connecté avec nous sur les réseaux sociaux pour suivre nos actualités et nos conseils.
+            </p>
+            <div class="contact-social">
+              <a href="#" class="contact-social-link" aria-label="Twitter">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="#" class="contact-social-link" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="contact-social-link" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="contact-social-link" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Horaires -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">
+              <i class="bi bi-clock"></i>
+              Horaires d'ouverture
+            </h3>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-calendar-week"></i>
+              </div>
+              <div class="contact-info-content">
+                <div class="contact-info-label">Lundi - Vendredi</div>
+                <div class="contact-info-value" style="color: var(--color-dark);">9h00 - 18h00</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-calendar-x"></i>
+              </div>
+              <div class="contact-info-content">
+                <div class="contact-info-label">Samedi - Dimanche</div>
+                <div class="contact-info-value" style="color: var(--color-dark);">Fermé</div>
+              </div>
+            </div>
+            <p style="font-size: var(--fs-s); color: var(--color-text-secondary); margin-top: 1rem; margin-bottom: 0;">
+              <i class="bi bi-info-circle" style="color: var(--color-primary);"></i>
+              Support WhatsApp disponible 24/7
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
 
 
   <footer class="footer-wrapper">
@@ -294,6 +336,7 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
   <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/contact.js"></script>
   <script src="../assets/js/scroll-animations.js"></script>
 
 </body>

@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Automatisation MindLab - Chatbots & Automatisation Réseaux Sociaux</title>
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -21,9 +20,9 @@
   <link rel="stylesheet" href="../assets/css/cours.css">
   <link rel="stylesheet" href="../assets/css/formateur.css">
   <link rel="stylesheet" href="../assets/css/evenement.css">
+  <link rel="stylesheet" href="../assets/css/details_cours.css">
   <link rel="stylesheet" href="../assets/css/animations.css">
-</head>
-
+  </head>
 <body>
   <header id="header">
     <nav class="navbar fixed-top navbar-expand-lg">
@@ -78,13 +77,13 @@
             <a class="mobile-nav-link active" href="cours.html">Cours</a>
           </li>
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="services.html">Services</a>
+            <a class="mobile-nav-link" href="formateur.html">Services</a>
           </li>
           <li class="mobile-nav-item">
             <a class="mobile-nav-link" href="contact.html">Contact</a>
           </li>
           <li class="mobile-nav-item mt-4">
-            <a class="btn rounded-5 px-4  py-3 text-center d-block" href="contact.html">Commencer</a>
+            <a class="btn rounded-5 px-4 py-3 w-100 text-center d-block" href="contact.html">Commencer</a>
           </li>
         </ul>
       </div>
@@ -94,8 +93,8 @@
 
   <section id="section7">
     <div class="col-12 col-xl-6 col-md-10 col-sm-8 text-center mb-5 px-2">
-      <h3>Nos formations en automatisation</h3>
-      <p>Trois étapes progressives pour apprendre, appliquer et réussir avec Chariow.
+      <h3>Détails de la formation</h3>
+      <p>Découvrez en détail le programme, les objectifs et les avantages de cette formation en automatisation digitale.
       </p>
     </div>
 
@@ -105,119 +104,115 @@
         <ol class="breadcrumb " style="color: white !important;">
           <li class="breadcrumb-item"><a href="../index.html" class=""
               style="text-decoration: none; color: var(--color-text);">Accueil</a></li>
-          <li class="breadcrumb-item active text-light" aria-current="page" class="text-light">Cours</li>
+          <li class="breadcrumb-item"><a href="cours.html" class=""
+              style="text-decoration: none; color: var(--color-text);">Cours</a></li>
+          <li class="breadcrumb-item active text-light" aria-current="page" class="text-light">Détails de la formation</li>
         </ol>
       </div>
     </nav>
   </section>
 
-  <section id="section5" class="section5-wrapper">
-    <div class="container py-5">
-      <div class="section5-header mb-4 pb-5">
-        <span class="section5-label">FORMATIONS</span>
-        <div class="section5-line"></div>
-        <h2 class="section5-title">NOS FORMATIONS POPULAIRES</h2>
+  <section class="course-details-wrapper">
+    <div class="container">
+      <!-- Hero Section -->
+      <div class="course-hero" id="courseHero">
+        <img src="" alt="Formation" class="course-hero-image" id="courseHeroImage">
+        <div class="course-hero-overlay">
+          <div class="course-hero-content">
+            <span class="course-hero-badge" id="courseHeroBadge">Fondamentaux</span>
+            <h1 class="course-hero-title" id="courseHeroTitle">Formation 1.0 — Les bases</h1>
+            <p class="course-hero-price" id="courseHeroPrice">7999 FCFA</p>
+          </div>
+        </div>
       </div>
 
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-          <a href="details_cours.html?formation=1">
-            <div class="section5-card">
-              <div class="section5-image-wrapper">
-                <img src="../assets/img/technology-3389885_1920.jpg" class="section5-image"
-                  alt="Formation Fondamentaux">
-              </div>
-              <div class="section5-card-body">
-                <div class="section5-badge-price">
-                  <span class="section5-badge">Fondamentaux</span>
-                  <span class="section5-price">7999 FCFA</span>
-                </div>
-                <h5 class="section5-card-title">Formation 1.0 — Les bases</h5>
-                <p class="section5-card-text">
-                  La formation la plus complète pour maîtriser des systèmes avancés et développer une activité
-                  professionnelle en automatisation.
-                <ul style="color: var(--color-dark);">
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Principes de
-                      l’automatisation</span></li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Premiers workflows
-                      simples</span></li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Compréhension des
-                      outils </span></li>
-                </ul>
-                </p>
-                <p class="section5-card-text"><strong style="color: var(--color-primary);">Idéal pour :</strong>
-                  débutants</p>
+      <!-- Contenu principal -->
+      <div class="course-content">
+        <!-- Colonne principale -->
+        <div class="course-main">
+          <!-- Description -->
+          <div class="course-section">
+            <h2 class="course-section-title">
+              <i class="bi bi-info-circle"></i>
+              À propos de cette formation
+            </h2>
+            <p class="course-section-text" id="courseDescription">
+              Chargement...
+            </p>
+          </div>
 
-              </div>
+          <!-- Programme -->
+          <div class="course-section">
+            <h2 class="course-section-title">
+              <i class="bi bi-list-check"></i>
+              Programme de la formation
+            </h2>
+            <div class="course-program" id="courseProgram">
+              <!-- Contenu dynamique -->
             </div>
-          </a>
+          </div>
+
+          <!-- Objectifs -->
+          <div class="course-section">
+            <h2 class="course-section-title">
+              <i class="bi bi-bullseye"></i>
+              Objectifs pédagogiques
+            </h2>
+            <ul class="course-list" id="courseObjectives">
+              <!-- Contenu dynamique -->
+            </ul>
+          </div>
+
+          <!-- Public cible -->
+          <div class="course-section">
+            <h2 class="course-section-title">
+              <i class="bi bi-people"></i>
+              Public cible
+            </h2>
+            <p class="course-section-text" id="courseTarget">
+              Chargement...
+            </p>
+          </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <a href="details_cours.html?formation=2">
-            <div class="section5-card">
-              <div class="section5-image-wrapper">
-                <img src="../assets/img/robot-8781973_1920.jpg" class="section5-image" alt="Formation Avancée">
+        <!-- Sidebar -->
+        <div class="course-sidebar">
+          <!-- Carte d'inscription -->
+          <div class="course-card">
+            <div class="course-card-price" id="courseCardPrice">7999 FCFA</div>
+            <div class="course-card-price-label">Prix de la formation</div>
+            <a target="_blank" href="https://chshhvhs.mychariow.shop/automate-mind-lab-1-0" class="course-card-btn py-2">
+              <i class="bi bi-cart-plus me-2"></i>
+              S'inscrire maintenant
+            </a>
+            <div class="course-card-info">
+              <div class="course-card-info-item">
+                <i class="bi bi-clock"></i>
+                <span id="courseDuration">8 heures</span>
               </div>
-              <div class="section5-card-body">
-                <div class="section5-badge-price">
-                  <span class="section5-badge">Avancé</span>
-                  <span class="section5-price">9999 FCFA</span>
-                </div>
-                <h5 class="section5-card-title">InFormation 2.0 — Mise en pratique</h5>
-                <p class="section5-card-text">
-                  La formation la plus complète pour maîtriser des systèmes avancés et développer une activité
-                  professionnelle en automatisation.
-                <ul style="color: var(--color-dark);">
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Automatisations
-                      applicables au business</span></li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Structuration des
-                      premières offres</span></li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Cas pratiques
-                      réels</span></li>
-                </ul>
-                </p>
-                <p class="section5-card-text"><strong style="color: var(--color-primary);">Idéal pour :</strong> passer
-                  à l’action</p>
-
+              <div class="course-card-info-item">
+                <i class="bi bi-calendar"></i>
+                <span id="courseFormat">En ligne</span>
+              </div>
+              <div class="course-card-info-item">
+                <i class="bi bi-award"></i>
+                <span id="courseCertificate">Certificat inclus</span>
               </div>
             </div>
-          </a>
-        </div>
+          </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <a href="details_cours.html?formation=3">
-            <div class="section5-card">
-              <div class="section5-image-wrapper">
-                <img src="../assets/img/ai-generated-9342713_1280.jpg" class="section5-image" alt="Formation Expert">
-              </div>
-              <div class="section5-card-body">
-                <div class="section5-badge-price">
-                  <span class="section5-badge">Expert</span>
-                  <span class="section5-price">14999 FCFA</span>
-                </div>
-                <h5 class="section5-card-title">Formation 3.0 — Niveau expert</h5>
-                <p class="section5-card-text">
-                  La formation la plus complète pour maîtriser des systèmes avancés et développer une activité
-                  professionnelle en automatisation.
-                <ul style="color: var(--color-dark);">
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Systèmes complexes et
-                      avancés</span></li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Automatisation à
-                      grande échelle</li>
-                  <li style="color: var(--color-primary);"><span style="color: var(--color-dark);">Approche
-                      professionnelle et scalable</li>
-                </ul>
-                </p>
-                <p class="section5-card-text"><strong style="color: var(--color-primary);">Idéal pour :</strong> profils
-                  avancés et entrepreneurs</p>
-              </div>
-            </div>
-          </a>
+          <!-- Caractéristiques -->
+          <div class="course-features">
+            <h3 class="course-features-title">Ce que vous obtenez</h3>
+            <ul class="course-features-list" id="courseFeatures">
+              <!-- Contenu dynamique -->
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
 
 
   <footer class="footer-wrapper">
@@ -285,17 +280,17 @@
       </div>
     </div>
   </footer>
-
-  <a href="#header" id="fleche" class="flechebas d-flex align-items-center justify-content-center active rounded-pill">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script src="../assets/js/script.js"></script>
-  <script src="../assets/js/scroll-animations.js"></script>
+    
+      <a href="#header" id="fleche" class="flechebas d-flex align-items-center justify-content-center active rounded-pill">
+        <i class="bi bi-arrow-up-short"></i>
+      </a>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+      <script src="../assets/js/script.js"></script>
+      <script src="../assets/js/details_cours.js"></script>
+      <script src="../assets/js/scroll-animations.js"></script>
 
 </body>
-
 </html>

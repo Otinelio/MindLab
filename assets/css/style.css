@@ -22,6 +22,7 @@ nav li {
 
 nav .mentor {
     margin-right: 100px;
+    color: var(--color-primary) !important;
 }
 
 header .navbar ul li a:hover {
@@ -723,7 +724,7 @@ ol li {
 }
 
 .section5-label {
-    color: var(--color-text);
+    color: var(--color-primary);
     font-size: var(--fs-sm);
     font-weight: var(--fw-medium);
     margin-right: 0.5rem;
@@ -741,7 +742,7 @@ ol li {
 .section5-title {
     font-size: var(--fs-xl);
     font-weight: var(--fw-bold);
-    color: var(--color-primary);
+    color: var(--color-dark);
     margin-top: 0.5rem;
     display: block;
 }

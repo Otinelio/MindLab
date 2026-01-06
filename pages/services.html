@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatisation MindLab - Chatbots & Automatisation Réseaux Sociaux</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/composants.css">
+  <link rel="stylesheet" href="../assets/css/apropos.css">
+  <link rel="stylesheet" href="../assets/css/cours.css">
+  <link rel="stylesheet" href="../assets/css/formateur.css">
+  <link rel="stylesheet" href="../assets/css/evenement.css">
+  <link rel="stylesheet" href="../assets/css/services.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-2 mentor" href="#">MindLab</a>
+
+        <!-- Menu burger personnalisé pour mobile/tablette -->
+        <button class="custom-burger d-lg-none" type="button" id="customBurger" aria-label="Toggle navigation">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+
+        <!-- Menu desktop (visible à partir de lg) -->
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNavDropdown">
+          <ul class="navbar-nav text-center mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="apropos.html">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="cours.html">Cours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-item text-end ms-auto">
+            <a class="btn rounded-5 px-4" href="contact.html">Commencer</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu mobile/tablette (affiché à gauche) -->
+    <div class="mobile-menu-overlay" id="menuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-content">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="../index.html">Accueil</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="apropos.html">A propos</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="cours.html">Cours</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link active" href="services.html">Services</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="mobile-nav-item mt-4">
+            <a class="btn rounded-5 px-4 py-3 w-100 text-center d-block" href="contact.html">Commencer</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <section id="section7">
+    <div class="col-12 col-xl-6 col-md-10 col-sm-8 text-center mb-5 px-2">
+      <h3>Nos services d'automatisation</h3>
+      <p>Des solutions complètes pour automatiser vos réseaux sociaux et booster votre business avec l'intelligence artificielle.
+      </p>
+    </div>
+
+    <nav aria-label="breadcrumb"
+      style="width: 100%; background-color: var(--color-primary); box-shadow: none !important;">
+      <div class="container">
+        <ol class="breadcrumb " style="color: white !important;">
+          <li class="breadcrumb-item"><a href="../index.html" class=""
+              style="text-decoration: none; color: var(--color-text);">Accueil</a></li>
+          <li class="breadcrumb-item active text-light" aria-current="page" class="text-light">Services</li>
+        </ol>
+      </div>
+    </nav>
+  </section>
+
+  <section class="services-wrapper">
+    <div class="container">
+      <!-- En-tête -->
+      <div class="services-header">
+        <span class="services-header-label">SERVICES</span>
+        <h2 class="services-header-title">Solutions d'automatisation sur mesure</h2>
+        <p class="services-header-text">
+          Découvrez notre gamme complète de services pour automatiser vos processus, générer des leads qualifiés 
+          et optimiser vos campagnes marketing sur Instagram, TikTok et autres plateformes.
+        </p>
+      </div>
+
+      <!-- Grille de services -->
+      <div class="services-grid">
+        <!-- Chatbot Instagram -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-instagram service-icon" style="color: rgb(255, 230, 0);"></i>
+          </div>
+          <h3 class="service-title">Chatbot Instagram</h3>
+          <p class="service-description">
+            Automatisez vos interactions sur Instagram avec des chatbots intelligents qui répondent instantanément 
+            aux messages, génèrent des leads et guident vos prospects vers la conversion.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Réponses automatiques 24/7</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Génération de leads qualifiés</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Intégration avec votre CRM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Chatbot TikTok -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-music-note-beamed service-icon" style="color: #5578ff;"></i>
+          </div>
+          <h3 class="service-title">Chatbot TikTok</h3>
+          <p class="service-description">
+            Engagez votre audience TikTok avec des chatbots personnalisés qui captent l'attention, 
+            répondent aux commentaires et transforment vos vues en ventes.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Engagement automatique</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Gestion des commentaires</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Conversion optimisée</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sélection Auto Posts -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-lightning-charge service-icon" style="color: #e80368;"></i>
+          </div>
+          <h3 class="service-title">Sélection Auto Posts</h3>
+          <p class="service-description">
+            Laissez l'IA sélectionner automatiquement les meilleurs posts à publier selon vos critères, 
+            votre audience et vos objectifs marketing pour maximiser votre engagement.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Sélection intelligente par IA</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Optimisation du timing</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Analyse de performance</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Filtres Intelligents -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-funnel service-icon" style="color: #e361ff;"></i>
+          </div>
+          <h3 class="service-title">Filtres Intelligents</h3>
+          <p class="service-description">
+            Filtrez et qualifiez automatiquement vos leads avec des critères intelligents basés sur l'IA, 
+            pour ne garder que les prospects les plus prometteurs.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Qualification automatique</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Critères personnalisables</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Scoring des leads</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Scénarios Auto -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-play-circle service-icon" style="color: #47aeff;"></i>
+          </div>
+          <h3 class="service-title">Scénarios Auto</h3>
+          <p class="service-description">
+            Créez des scénarios d'automatisation complexes qui s'adaptent aux comportements de vos prospects, 
+            avec des parcours personnalisés pour chaque type d'utilisateur.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Parcours personnalisés</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Déclencheurs multiples</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Adaptation en temps réel</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Questions Auto -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-chat-quote service-icon" style="color: #ffa76e;"></i>
+          </div>
+          <h3 class="service-title">Questions Auto</h3>
+          <p class="service-description">
+            Automatisez la collecte d'informations avec des questionnaires intelligents qui s'adaptent 
+            aux réponses de vos prospects pour une qualification optimale.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Questionnaires adaptatifs</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Collecte d'informations</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Qualification progressive</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Campagnes IA Boost -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-graph-up-arrow service-icon" style="color: #11dbcf;"></i>
+          </div>
+          <h3 class="service-title">Campagnes IA Boost</h3>
+          <p class="service-description">
+            Optimisez vos campagnes publicitaires avec l'intelligence artificielle pour maximiser votre ROI, 
+            réduire vos coûts et augmenter vos conversions automatiquement.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Optimisation automatique</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>ROI maximisé</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>A/B testing intelligent</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Test Systèmes -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-check2-circle service-icon" style="color: #4233ff;"></i>
+          </div>
+          <h3 class="service-title">Test Systèmes</h3>
+          <p class="service-description">
+            Testez et validez vos automatisations avant leur déploiement avec des outils de simulation avancés 
+            pour garantir la fiabilité de vos systèmes.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Simulation complète</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Détection d'erreurs</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Validation avant déploiement</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Création Bots -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-robot service-icon" style="color: #b2904f;"></i>
+          </div>
+          <h3 class="service-title">Création Bots</h3>
+          <p class="service-description">
+            Conception et développement de chatbots sur mesure adaptés à vos besoins spécifiques, 
+            avec une personnalisation complète de leur comportement et de leurs réponses.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Développement sur mesure</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Personnalisation complète</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Intégration native</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Déclenchement Bots -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-power service-icon" style="color: #b20969;"></i>
+          </div>
+          <h3 class="service-title">Déclenchement Bots</h3>
+          <p class="service-description">
+            Configuration et activation de vos bots avec des déclencheurs intelligents qui s'activent 
+            au bon moment selon les actions de vos utilisateurs.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Déclencheurs intelligents</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Activation conditionnelle</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Gestion multi-plateformes</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Accompagnement Perso -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-person-check service-icon" style="color: #ff5828;"></i>
+          </div>
+          <h3 class="service-title">Accompagnement Perso</h3>
+          <p class="service-description">
+            Bénéficiez d'un accompagnement personnalisé pour mettre en place vos automatisations, 
+            avec un suivi dédié jusqu'à l'obtention de vos premiers résultats.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Coaching personnalisé</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Suivi jusqu'à la vente</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Formation pratique</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Support WhatsApp -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="bi bi-whatsapp service-icon" style="color: #29cc61;"></i>
+          </div>
+          <h3 class="service-title">Support WhatsApp</h3>
+          <p class="service-description">
+            Accédez à un support technique disponible 24/7 sur WhatsApp pour résoudre rapidement 
+            vos problèmes et optimiser vos automatisations en temps réel.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Disponibilité 24/7</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Réponse rapide</span>
+            </li>
+            <li class="service-feature">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Support technique expert</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section CTA -->
+      <div class="services-cta">
+        <h3 class="services-cta-title">Prêt à automatiser votre business ?</h3>
+        <p class="services-cta-text">
+          Contactez-nous dès aujourd'hui pour découvrir comment nos services peuvent transformer 
+          votre façon de travailler et générer plus de résultats avec moins d'effort.
+        </p>
+        <a href="contact.html" class="services-cta-btn">
+          Demander un devis gratuit
+          <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer-wrapper">
+    <div class="container py-5">
+      <div class="row g-4">
+        <!-- Colonne 1: MindLab -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <h4 class="footer-brand">MindLab</h4>
+          <div class="footer-contact">
+            <p class="footer-phone">Téléphone: +2290148521609</p>
+            <p class="footer-email">Email: automatemindlab@gmail.com</p>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="footer-social-icon" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Colonne 2: Liens utiles -->
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="footer-heading">Liens utiles</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Accueil</a></li>
+            <li><a href="apropos.html" class="footer-link">À propos de nous</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="cours.html" class="footer-link">Cours</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3: Nos services -->
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="footer-heading">Nos services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Chatbots Instagram</a></li>
+            <li><a href="services.html" class="footer-link">Chatbots TikTok</a></li>
+            <li><a href="services.html" class="footer-link">Campagnes IA Boost</a></li>
+            <li><a href="services.html" class="footer-link">Accompagnement Perso</a></li>
+            <li><a href="services.html" class="footer-link">Support WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 4: Newsletter -->
+        <div class="col-lg-5 col-md-6 col-12">
+          <h5 class="footer-heading">Notre newsletter</h5>
+          <p class="footer-newsletter-text">Abonnez-vous à notre newsletter et recevez les dernières nouvelles sur nos
+            produits et services !</p>
+          <form class="footer-newsletter-form">
+            <div class="footer-newsletter-input-wrapper">
+              <input type="email" class="footer-newsletter-input" id="footerEmail" placeholder="Votre email"
+                aria-label="Adresse email">
+              <button type="submit" class="footer-newsletter-btn">S'abonner</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#header" id="fleche" class="flechebas d-flex align-items-center justify-content-center active rounded-pill">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/scroll-animations.js"></script>
+
+</body>
+
+</html>

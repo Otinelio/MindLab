@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Automatisation MindLab - Chatbots & Automatisation Réseaux Sociaux</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatisation MindLab - Chatbots & Automatisation Réseaux Sociaux</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/variables.css">
-  <link rel="stylesheet" href="../assets/css/composants.css">
-  <link rel="stylesheet" href="../assets/css/apropos.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/variables.css">
+<link rel="stylesheet" href="../assets/css/composants.css">
+<link rel="stylesheet" href="../assets/css/apropos.css">
   <link rel="stylesheet" href="../assets/css/cours.css">
   <link rel="stylesheet" href="../assets/css/formateur.css">
   <link rel="stylesheet" href="../assets/css/evenement.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+</head>
+
 <body>
-    
+
   <header id="header">
     <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-2 mentor text-primary" href="#">MindLab</a>
+        <a class="navbar-brand fw-bold fs-2 mentor" href="#">MindLab</a>
 
         <!-- Menu burger personnalisé pour mobile/tablette -->
         <button class="custom-burger d-lg-none" type="button" id="customBurger" aria-label="Toggle navigation">
@@ -40,20 +44,20 @@
               <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="pages/apropos.html">A propos</a>
+              <a class="nav-link active" aria-current="page" href="apropos.html">A propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="formateur.html">Services</a>
+              <a class="nav-link" aria-current="page" href="cours.html">Cours</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="evenement.html">Cours</a>
+              <a class="nav-link" aria-current="page" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Contact</a>
+              <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
             </li>
           </ul>
           <div class="nav-item text-end ms-auto">
-            <a class="btn rounded-5 px-4" href="#">Commencer</a>
+            <a class="btn rounded-5 px-4" href="contact.html">Commencer</a>
           </div>
         </div>
       </div>
@@ -65,22 +69,22 @@
       <div class="mobile-menu-content">
         <ul class="mobile-nav-list">
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link active text-primary" href="index.html">Accueil</a>
+            <a class="mobile-nav-link" href="../index.html">Accueil</a>
           </li>
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="cours.html">A propos</a>
+            <a class="mobile-nav-link active" href="apropos.html">A propos</a>
           </li>
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="formateur.html">Services</a>
+            <a class="mobile-nav-link" href="cours.html">Cours</a>
           </li>
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="evenement.html">Cours</a>
+            <a class="mobile-nav-link" href="services.html">Services</a>
           </li>
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="#">Contact</a>
+            <a class="mobile-nav-link" href="contact.html">Contact</a>
           </li>
           <li class="mobile-nav-item mt-4">
-            <a class="btn rounded-5 px-4 w-100 text-center d-block" href="#">Commencer</a>
+            <a class="btn rounded-5 px-4 py-3 w-100 text-center d-block" href="contact.html">Commencer</a>
           </li>
         </ul>
       </div>
@@ -88,221 +92,313 @@
 
   </header>
 
-    <section id="section7">
-    <div class="col-12 col-xl-6 col-md-10 col-sm-8 text-center mb-5">
-        <h3>À propos de nous</h3>
-        <p>Odio et unde deleniti. Deserunt numquam exercice. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Asseyez-vous dolorum debitis veritatis natus dolores. Quasi ratione sint. Asseyez-vous quaerat ipsum dolorem.</p>
-    </div> 
-    
-    <nav aria-label="breadcrumb" style="width: 100%; background-color: blue; box-shadow: none !important;">
-        <div class="container">
-            <ol class="breadcrumb " style="color: white !important;">
-                <li class="breadcrumb-item"><a href="#" class="text-light" style="text-decoration: none;">Maison</a></li>
-                <li class="breadcrumb-item active text-light" aria-current="page" class="text-light">A propos</li>
-              </ol>
-        </div>
-      </nav>
-    </section>
+  <section id="section7">
+    <div class="col-12 col-xl-6 col-md-10 col-sm-8 text-center mb-5 px-2">
+      <h3>À propos de l’agence</h3>
+      <p>Agence spécialisée en automatisation digitale, nous aidons les entreprises à gagner du temps, améliorer leurs performances et automatiser efficacement leurs processus.
+      </p>
+        </p>
+    </div>
 
-    <section class="container section1">
-        <div class="row my-5 g-3">
-          <div class="col-md-6 col-12 order-2 order-md-1">
-            <h3 style="font-weight: 700; font-size: 30px;">Voluptatem dignissimos provident quasi corporis</h3>
-            <p style="font-style: italic;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                  </svg>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                  </svg>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-              <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                  </svg>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
-            
-          </div>
-          <div class="col-md-6 col-12 order-1 order-md-2">
-            <img src="img/about.jpg" class="w-100" alt="">
-          </div>
-        </div>
-      </section>
+    <nav aria-label="breadcrumb"
+      style="width: 100%; background-color: var(--color-primary); box-shadow: none !important;">
+      <div class="container">
+        <ol class="breadcrumb " style="color: white !important;">
+          <li class="breadcrumb-item"><a href="../index.html" class=""
+              style="text-decoration: none; color: var(--color-text);">Accueil</a></li>
+          <li class="breadcrumb-item active text-light" aria-current="page" class="text-light">A propos</li>
+        </ol>
+      </div>
+    </nav>
+  </section>
 
-      <section class="container-fluid section2 ">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-12 col-md-6  col-lg-3 my-5" style="color: rgb(170, 155, 128);"><span class="box text-primary">1232</span> <br> Étudiants</div>
-            <div class="col-12 col-md-6  col-lg-3 my-5" style="color: rgb(170, 155, 128);"><span class="box text-primary">64</span> <br> Cours</div>
-            <div class="col-12 col-md-6  col-lg-3 my-5" style="color: rgb(170, 155, 128);"><span class="box text-primary">42</span> <br> Événements</div>
-            <div class="col-12 col-md-6  col-lg-3 my-5" style="color: rgb(170, 155, 128);"><span class="box text-primary">24</span> <br> Formateurs</div>
-          </div>
+  <section class="container section1">
+    <div class="row my-lg-5 my-2 mb-5 g-3">
+      <!-- Image en haut sur mobile/tablette, à droite sur desktop -->
+      <div class="col-12 col-lg-6 order-2">
+        <div class="section1-image-wrapper">
+          <img src="../assets/img/ai-generated-9342713_1280.jpg" class="section1-image w-100 rounded-5"
+            alt="Formation automatisation">
         </div>
-    </section>
+      </div>
+      <!-- Texte en bas sur mobile/tablette, à gauche sur desktop -->
+      <div class="col-12 col-lg-6 order-1">
+        <h3 class="my-3">Formation complète et accompagnement jusqu'à votre première vente</h3>
+        <p style="font-style: italic;">Automatisation MindLab vous forme aux techniques avancées d'automatisation sur
+          les réseaux sociaux avec des formations pratiques et un suivi personnalisé.</p>
+        <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+            fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+            <path
+              d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+          </svg><span class="fw-bold">Formations sur chariow :</span> Création, déclenchement et gestion de bots
+          automatisés pour Instagram et TikTok.</p>
+        <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+            fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+            <path
+              d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+          </svg><span class="fw-bold">Intégration avancée de chatbots</span>Intégration avancée de chatbots avec
+          sélection intelligente de posts, filtres personnalisés et scénarios automatisés.</span></p>
+        <p><svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+            fill="rgb(30, 113, 185)" class="bi bi-check-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+            <path
+              d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+          </svg><span class="fw-bold">Accompagnement personnalisé et suivi</span> jusqu'à votre première vente, avec
+          assistance WhatsApp incluse pour toutes vos questions.</span></p>
 
-    <section id="section8" class="container mt-5">
-        <div class="row">
-          <div>
-            <span class="me-2">TÉMOIGNAGES</span>
-            <div class="ligne"></div>
-            <h2 class="fw-bold">QU'EST CE QU'ILS DISENT</h2>
-          </div>
-          <div class="col-12 mx-5 col-lg-5">
-            <div class="col-12 p-0 m-0">
-              <div>
-                <img src="img/testimonials-3.jpg" alt="" class="img-fluid rounded" width="80px" style="display: inline-block; position: relative; top: 120px; left: -50px;">
-                <div class="border ps-5 pe-3 pt-5 pb-4">
-                  <h5 class="py-0 my-0">Jena Karlis</h5>
-                <p class="my-0 py-0" style="color: rgb(171, 179, 177);">Propriétaire du magasin</p>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <br>
-                <p > <i class="bi bi-quote" style="font-size: 40px; color: rgba(69, 236, 222, 0.486);" ></i>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cum minima animi necessitatibus, corrupti beatae sit saepe rerum eius autem expedita nobis vel optio ab aliquam dicta distinctio voluptate libero?
-                  </p>
-                </div>
-              </div>
-              </div>
-          </div>
-          <div class="ms-5 col-12 col-lg-5">
-            <div class="col-12">
-              <img src="img/testimonials-4.jpg" alt="" class="img-fluid rounded" width="80px" style="display: inline; position: relative; top: 120px; left: -50px;">
-                <div class="border ps-5 pe-3 pt-5 pb-4">
-                  <h5 class="py-0 my-0">Matt Brandon</h5>
-                <p class="my-0 py-0" style="color: rgb(171, 179, 177);">Freelance</p>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <br>
-                <p > <i class="bi bi-quote" style="font-size: 40px; color: rgba(69, 236, 222, 0.486);" ></i>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cum minima animi necessitatibus, corrupti beatae sit saepe rerum eius autem expedita nobis vel optio ab aliquam dicta distinctio voluptate libero?
-                  </p>
-              
-                </div>
-              </div>
-          </div>
-          <div class="col-12 mx-5 col-lg-5">
-            <div class="col-12 p-0 m-0">
-              <div>
-                <img src="img/testimonials-5.jpg" alt="" class="img-fluid rounded" width="80px" style="display: inline-block; position: relative; top: 120px; left: -50px;">
-                <div class="border ps-5 pe-3 pt-5 pb-4">
-                  <h5 class="py-0 my-0">John Larson</h5>
-                <p class="my-0 py-0" style="color: rgb(171, 179, 177);">Entrepreneur</p>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <br>
-                <p > <i class="bi bi-quote" style="font-size: 40px; color: rgba(69, 236, 222, 0.486);" ></i>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cum minima animi necessitatibus, corrupti beatae sit saepe rerum eius autem expedita nobis vel optio ab aliquam dicta distinctio voluptate libero?
-                  </p>
-                </div>
-              </div>
-              </div>
-          </div>
-          <div class="ms-5 col-12 col-lg-5">
-            <div class="col-12">
-              <img src="img/testimonials-1.jpg" alt="" class="img-fluid rounded" width="80px" style="display: inline; position: relative; top: 120px; left: -50px;">
-                <div class="border ps-5 pe-3 pt-5 pb-4">
-                  <h5 class="py-0 my-0">Saul Goodman</h5>
-                <p class="my-0 py-0" style="color: rgb(171, 179, 177);">PDG & Fondateur</p>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0);"></i>
-                <br>
-                <p > <i class="bi bi-quote" style="font-size: 40px; color: rgba(69, 236, 222, 0.486);" ></i>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cum minima animi necessitatibus, corrupti beatae sit saepe rerum eius autem expedita nobis vel optio ab aliquam dicta distinctio voluptate libero?
-                  </p>
-              
-                </div>
-              </div>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid section2">
+    <div class="container text-center">
+      <div class="row g-3 g-md-4">
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="section2-item">
+            <span class="box">180+</span>
+            <p class="section2-label">Étudiants formés</p>
           </div>
         </div>
-    </section>
-
-    <footer class="footer-wrapper">
-      <div class="container py-5">
-        <div class="row g-4">
-          <!-- Colonne 1: MindLab -->
-          <div class="col-lg-3 col-md-6 col-12">
-            <h4 class="footer-brand">MindLab</h4>
-            <div class="footer-contact">
-              <p class="footer-phone">Téléphone: +33 6 59 59 59 59</p>
-              <p class="footer-email">Email: contact@mindlab.fr</p>
-            </div>
-            <div class="footer-social">
-              <a href="#" class="footer-social-icon" aria-label="Twitter">
-                <i class="bi bi-twitter-x"></i>
-              </a>
-              <a href="#" class="footer-social-icon" aria-label="Facebook">
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a href="#" class="footer-social-icon" aria-label="Instagram">
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a href="#" class="footer-social-icon" aria-label="LinkedIn">
-                <i class="bi bi-linkedin"></i>
-              </a>
-            </div>
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="section2-item">
+            <span class="box">250+</span>
+            <p class="section2-label">Chatbots déployés</p>
           </div>
-  
-          <!-- Colonne 2: Liens utiles -->
-          <div class="col-lg-2 col-md-6 col-12">
-            <h5 class="footer-heading">Liens utiles</h5>
-            <ul class="footer-links">
-              <li><a href="#" class="footer-link">Maison</a></li>
-              <li><a href="#" class="footer-link">À propos de nous</a></li>
-              <li><a href="#" class="footer-link">Services</a></li>
-              <li><a href="#" class="footer-link">Conditions d'utilisation</a></li>
-              <li><a href="#" class="footer-link">Politique de confidentialité</a></li>
-            </ul>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="section2-item">
+            <span class="box">95%</span>
+            <p class="section2-label">Taux de satisfaction</p>
           </div>
-  
-          <!-- Colonne 3: Nos services -->
-          <div class="col-lg-2 col-md-6 col-12">
-            <h5 class="footer-heading">Nos services</h5>
-            <ul class="footer-links">
-              <li><a href="#" class="footer-link">Chatbots Instagram</a></li>
-              <li><a href="#" class="footer-link">Chatbots TikTok</a></li>
-              <li><a href="#" class="footer-link">Campagnes IA Boost</a></li>
-              <li><a href="#" class="footer-link">Accompagnement Perso</a></li>
-              <li><a href="#" class="footer-link">Support WhatsApp</a></li>
-            </ul>
-          </div>
-  
-          <!-- Colonne 4: Newsletter -->
-          <div class="col-lg-5 col-md-6 col-12">
-            <h5 class="footer-heading">Notre newsletter</h5>
-            <p class="footer-newsletter-text">Abonnez-vous à notre newsletter et recevez les dernières nouvelles sur nos
-              produits et services !</p>
-            <form class="footer-newsletter-form">
-              <div class="footer-newsletter-input-wrapper">
-                <input type="email" class="footer-newsletter-input" id="footerEmail" placeholder="Votre email"
-                  aria-label="Adresse email">
-                <button type="submit" class="footer-newsletter-btn">S'abonner</button>
-              </div>
-            </form>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="section2-item">
+            <span class="box">24/7</span>
+            <p class="section2-label">Support WhatsApp</p>
           </div>
         </div>
       </div>
-    </footer>
-  
-    <a href="#header" id="fleche" class="flechebas d-flex align-items-center justify-content-center active rounded-pill">
-      <i class="bi bi-arrow-up-short"></i>
-    </a>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+    </div>
+  </section>
+
+  <section id="section8" class="container py-5 my-5">
+    <div class="section8-header mb-5">
+      <span class="section8-label">TÉMOIGNAGES</span>
+      <div class="section8-line"></div>
+      <h2 class="section8-title">CE QUE DISENT NOS CLIENTS</h2>
+    </div>
+
+    <!-- Carousel Container -->
+    <div class="testimonial-carousel-wrapper">
+      <div class="testimonial-carousel-container">
+        <div class="testimonial-carousel-track" id="testimonialCarousel">
+          <!-- Témoignage 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-image-wrapper">
+                <img src="../assets/img1/testimonials-3.jpg" alt="Jena Karlis" class="testimonial-image">
+              </div>
+              <div class="testimonial-content">
+                <h5 class="testimonial-name">Jena Karlis</h5>
+                <p class="testimonial-role">Propriétaire du magasin</p>
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  <i class="bi bi-quote testimonial-quote"></i>
+                  Notre collaboration a transformé notre façon de travailler. Les automatisations mises en place nous ont fait gagner un temps considérable et réduit les erreurs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Témoignage 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-image-wrapper">
+                <img src="../assets/img1/testimonials-4.jpg" alt="Matt Brandon" class="testimonial-image">
+              </div>
+              <div class="testimonial-content">
+                <h5 class="testimonial-name">Matt Brandon</h5>
+                <p class="testimonial-role">Freelance</p>
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  <i class="bi bi-quote testimonial-quote"></i>
+                  Une équipe professionnelle et à l’écoute. Les solutions proposées sont claires, efficaces et parfaitement adaptées à nos besoins.
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Témoignage 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-image-wrapper">
+                <img src="../assets/img1/testimonials-5.jpg" alt="John Larson" class="testimonial-image">
+              </div>
+              <div class="testimonial-content">
+                <h5 class="testimonial-name">John Larson</h5>
+                <p class="testimonial-role">Entrepreneur</p>
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  <i class="bi bi-quote testimonial-quote"></i>
+                  Grâce à leur accompagnement, nous avons automatisé plusieurs processus clés et amélioré notre productivité dès les premières semaines.
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Témoignage 4 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-image-wrapper">
+                <img src="../assets/img1/testimonials-1.jpg" alt="Saul Goodman" class="testimonial-image">
+              </div>
+              <div class="testimonial-content">
+                <h5 class="testimonial-name">Saul Goodman</h5>
+                <p class="testimonial-role">PDG & Fondateur</p>
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  <i class="bi bi-quote testimonial-quote"></i>
+                  Une vraie expertise en automatisation. Le résultat est concret, mesurable et parfaitement intégré à notre organisation.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons (Desktop) -->
+      <button class="testimonial-carousel-btn testimonial-carousel-prev" id="testimonialPrev"
+        aria-label="Témoignage précédent">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="testimonial-carousel-btn testimonial-carousel-next" id="testimonialNext"
+        aria-label="Témoignage suivant">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+
+      <!-- Navigation Controls (Mobile) -->
+      <div class="testimonial-carousel-mobile-controls">
+        <button class="testimonial-carousel-btn-mobile testimonial-carousel-prev-mobile" id="testimonialPrevMobile"
+          aria-label="Témoignage précédent">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <!-- Dots Navigation -->
+        <div class="testimonial-carousel-dots" id="testimonialDots"></div>
+        <button class="testimonial-carousel-btn-mobile testimonial-carousel-next-mobile" id="testimonialNextMobile"
+          aria-label="Témoignage suivant">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-wrapper">
+    <div class="container py-5">
+      <div class="row g-4">
+        <!-- Colonne 1: MindLab -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <h4 class="footer-brand">MindLab</h4>
+          <div class="footer-contact">
+            <p class="footer-phone">Téléphone: +2290148521609</p>
+            <p class="footer-email">Email: automatemindlab@gmail.com</p>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="footer-social-icon" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Colonne 2: Liens utiles -->
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="footer-heading">Liens utiles</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Accueil</a></li>
+            <li><a href="apropos.html" class="footer-link">À propos de nous</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="cours.html" class="footer-link">Cours</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3: Nos services -->
+        <div class="col-lg-2 col-md-6 col-12">
+          <h5 class="footer-heading">Nos services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Chatbots Instagram</a></li>
+            <li><a href="services.html" class="footer-link">Chatbots TikTok</a></li>
+            <li><a href="services.html" class="footer-link">Campagnes IA Boost</a></li>
+            <li><a href="services.html" class="footer-link">Accompagnement Perso</a></li>
+            <li><a href="services.html" class="footer-link">Support WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 4: Newsletter -->
+        <div class="col-lg-5 col-md-6 col-12">
+          <h5 class="footer-heading">Notre newsletter</h5>
+          <p class="footer-newsletter-text">Abonnez-vous à notre newsletter et recevez les dernières nouvelles sur nos
+            produits et services !</p>
+          <form class="footer-newsletter-form">
+            <div class="footer-newsletter-input-wrapper">
+              <input type="email" class="footer-newsletter-input" id="footerEmail" placeholder="Votre email"
+                aria-label="Adresse email">
+              <button type="submit" class="footer-newsletter-btn">S'abonner</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#header" id="fleche" class="flechebas d-flex align-items-center justify-content-center active rounded-pill">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/scroll-animations.js"></script>
 
 </body>
+
 </html>

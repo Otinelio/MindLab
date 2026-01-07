@@ -5,7 +5,7 @@ const formations = {
     title: "Formation 1.0 — Les bases",
     price: "7999 FCFA",
     image: "../assets/img/technology-3389885_1920.jpg",
-    link: "https://chshhvhs.mychariow.shop/automate-mind-lab-1-0",
+    link: "https://chshhvhs.mychariow.shop/automate-mind-lab-1-0/checkout",
     description: "Plongez dans l'univers de l'automatisation digitale avec cette formation complète conçue pour les débutants. Vous découvrirez les concepts fondamentaux, les outils essentiels et les premières étapes pour créer vos propres workflows d'automatisation. Cette formation vous donnera les bases solides nécessaires pour progresser dans votre parcours d'automatisation.",
     program: [
       {
@@ -53,7 +53,7 @@ const formations = {
     title: "Formation 2.0 — Mise en pratique",
     price: "9999 FCFA",
     image: "../assets/img/robot-8781973_1920.jpg",
-    link: "https://chshhvhs.mychariow.shop/automate-mind-lab-2-0",
+    link: "https://chshhvhs.mychariow.shop/automate-mind-lab-2-0/checkout",
     description: "Passez à l'action avec cette formation avancée qui vous permettra de créer des automatisations complexes et applicables directement à votre business. Vous apprendrez à structurer vos offres, à gérer des workflows avancés et à résoudre des problèmes concrets grâce à l'automatisation. Cette formation est conçue pour ceux qui veulent transformer leurs connaissances en résultats tangibles.",
     program: [
       {
@@ -107,7 +107,7 @@ const formations = {
     title: "Formation 3.0 — Niveau expert",
     price: "14999 FCFA",
     image: "../assets/img/ai-generated-9342713_1280.jpg",
-    link: "https://chshhvhs.mychariow.shop/automate-mind-lab-3-0",
+    link: "https://chshhvhs.mychariow.shop/automate-mind-lab-3-0/checkout",
     description: "Devenez un expert de l'automatisation digitale avec cette formation complète de niveau expert. Vous maîtriserez les systèmes les plus complexes, l'automatisation à grande échelle et l'approche professionnelle pour développer une activité scalable. Cette formation est conçue pour les profils avancés et les entrepreneurs qui souhaitent exceller dans le domaine de l'automatisation.",
     program: [
       {

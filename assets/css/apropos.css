@@ -132,6 +132,11 @@ section#section8 {
     z-index: 2;
 }
 
+.testimonial-icon {
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+
 .testimonial-content {
     flex: 1;
     display: flex;
